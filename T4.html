@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>Count and display items of a dropdown list - w3resource</title>
+        <style>
+            body{
+                margin: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <select id="mySelect">
+                <option>Red</option>
+                <option>Green</option>
+                <option>White</option>
+                <option>Black</option>
+            </select>
+            <input type="button" onclick="getOptions()" value="Count and Output all items">
+        </form>
+
+        <script>
+            function getOptions(){
+                let options=document.getElementById("mySelect");
+
+                let html = `Total items : ${options.childElementCount}\n`;
+
+                for(var i=0; i<options.childElementCount; i++){
+            
+                    html += `${options[i].innerText}\n`;
+
+                };
+
+                alert(html);
+
+            }
+        </script>
+    </body>
+</html>
