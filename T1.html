@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>JS DOM paragraph style</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    </head>
+    <body>
+        <p id ="text">JavaScript Exercises - w3resource</p>
+        <div>
+            <button id="jsstyle" onclick="js_style()">Click to see Style effects</button>
+        </div>
+
+        <script>
+            function js_style(){
+                let button = document.getElementById("text");
+
+                button.style.fontFamily="arial";
+                button.style.fontSize="24px";
+                button.style.color="red";
+            }  
+        </script>
+    </body>
+</html>
